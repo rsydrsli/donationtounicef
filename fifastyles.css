@@ -203,9 +203,11 @@ nav a:hover::after {
     header p {
         font-size: 1.2rem;
     }
-	header .logos img {
+	
+    header .logos img {
         height: 40px;
     }
+
     .container {
         width: 95%;
     }
@@ -248,20 +250,7 @@ nav a:hover::after {
 	.stadium-image {
         width: 90%;
     }
-	
-	.gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
 
-    .gallery img {
-        max-width: 100%; 
-        height: auto;
-        margin: 10px auto; 
-    }
 }
 
 .club-logo {
