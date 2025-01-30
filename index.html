@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Charity Match - Homepage</title>
+    <link rel="stylesheet" href="fifastyles.css">
+    <script defer src="script.js"></script>
+    <style>
+		header {
+			padding: 0 20px;
+		}
+			
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e3c72;
+        }
+	 
+        .donation-banner {
+            text-align: center;
+        }
+
+        .donation-banner h1 {
+            font-size: 70px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+    <div class="donation-banner">
+		<h1>DONATION TO KIDS</h1>
+    </div>
+
+<body>
+    <header id="home">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="match.html">Match</a>
+            <a href="teams.html">Teams</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="donate.html">Donate</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.fifa.com/en/home" target="_blank">FIFA Official Page</a>
+        </nav>
+
+        <div class="logos">
+            <img src="photos/fifa.png" alt="FIFA Logo">
+            <img src="photos/unicef.png" alt="UNICEF Logo">
+        </div>
+      
+        <div class="container">
+            <div class="center-content">
+                <h1>FIFA Charity Match</h1>
+                <p>Real Madrid Legends vs FC Porto Vintage</p>
+                <div class="team-logos">
+                    <img src="photos/real_madrid_logo.svg" alt="Real Madrid Logo">
+                    <span class="vs">VS</span>
+                    <img src="photos/fc_porto_logo.png" alt="FC Porto Logo">
+                </div>
+                <div id="countdown">
+                    <div class="time">
+                        <span id="days">00</span>
+                        <div class="label">Days</div>
+                    </div>
+                    <div class="time">
+                        <span id="hours">00</span>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div class="time">
+                        <span id="minutes">00</span>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div class="time">
+                        <span id="seconds">00</span>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var countDownDate = new Date("Feb 10, 2025 00:00:00").getTime();
+
+            var x = setInterval(function() {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days.toString().padStart(2, '0');
+            document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<h1>The event has started!</h1>";
+            }
+            }, 1000);
+        </script>
+    </header>
+
+    <footer>
+        <p>&copy; 2025 FIFA Charity Match. All rights reserved. (Educational Purpose Only)</p>
+    </footer>
+</body>
+</html>

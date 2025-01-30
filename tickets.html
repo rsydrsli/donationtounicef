@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Charity Match - Tickets</title>
+    <link rel="stylesheet" href="fifastyles.css">
+    <style>
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #004080;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+        }
+
+
+        .frame {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #004080, #00bfff);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            color: white;
+            animation: fadeIn 1.5s ease-out;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .frame h3 {
+            width: 100%;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+
+        .ticket-category {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ticket-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .ticket-category strong {
+            display: block;
+            font-size: 1.5rem;
+            color: #004080;
+            margin-bottom: 10px;
+        }
+
+        .ticket-category p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .ticket-category .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00bfff;
+            margin: 15px 0;
+        }
+
+        .quantity-input {
+            margin: 10px 0;
+        }
+
+        /* Shopping cart */
+        .cart {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .cart th, .cart td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart th {
+            background-color: #004080;
+            color: white;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #003060;
+        }
+		
+		footer p {
+			color: #f4f4f9;
+		}
+		
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="logos">
+            <img src="photos/fifa.png" alt="FIFA Logo">
+            <img src="photos/unicef.png" alt="UNICEF Logo">
+        </div>
+        <div class="container">
+            <h1>Tickets</h1>
+            <nav>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="match.html">Match</a>
+				<a href="teams.html">Teams</a>
+				<a href="tickets.html">Tickets</a>
+				<a href="donate.html">Donate</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+				<a href="https://www.fifa.com/en/home" target="_blank" >FIFA Official Page</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Get Your Tickets</h2>
+            <p>Explore our ticket categories and secure your spot for an unforgettable experience.</p>
+
+            <div class="frame">
+                <h3>Available Ticket Categories</h3>
+
+                <div class="ticket-category">
+                    <strong>Standard</strong>
+                    <p>Enjoy general seating with great views of the field.</p>
+                    <p class="price">$50</p>
+                    <div class="quantity-input">
+                        <label for="quantity-standard">Quantity:</label>
+                        <input type="number" id="quantity-standard" min="1" value="1">
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="ticket-category">
+                    <strong>VIP</strong>
+                    <p>Access premium seating, the VIP lounge, and complimentary refreshments.</p>
+                    <p class="price">$150</p>
+                    <div class="quantity-input">
+                        <label for="quantity-vip">Quantity:</label>
+                        <input type="number" id="quantity-vip" min="1" value="1">
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="ticket-category">
+                    <strong>Corporate Box</strong>
+                    <p>Exclusive box seating for up to 10 people with personalized service and snacks.</p>
+                    <p class="price">$1000</p>
+                    <div class="quantity-input">
+                        <label for="quantity-corporate">Quantity:</label>
+                        <input type="number" id="quantity-corporate" min="1" value="1">
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="cart" style="display: none;">
+                <h3>Your Cart</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket Type</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items"></tbody>
+                </table>
+                <p id="total-price">Total: $0</p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = [];
+            const cartContainer = document.querySelector('.cart');
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+
+            document.querySelectorAll('.add-to-cart-btn').forEach((button) => {
+                button.addEventListener('click', (e) => {
+                    const ticketCategory = e.target.parentElement;
+                    const type = ticketCategory.querySelector('strong').innerText;
+                    const price = parseFloat(ticketCategory.querySelector('.price').innerText.replace('$', ''));
+                    const quantityInput = ticketCategory.querySelector('input');
+                    const quantity = parseInt(quantityInput.value);
+
+                    if (!quantity || quantity < 1) {
+                        alert('Please enter a valid quantity.');
+                        return;
+                    }
+
+                    const existing = cart.find((item) => item.type === type);
+                    if (existing) {
+                        existing.quantity += quantity;
+                    } else {
+                        cart.push({ type, price, quantity });
+                    }
+
+                    quantityInput.value = 1;
+                    updateCart();
+                });
+            });
+
+            function updateCart() {
+                cartItems.innerHTML = '';
+                let total = 0;
+
+                cart.forEach((item) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${item.type}</td>
+                        <td>${item.quantity}</td>
+                        <td>$${item.price.toFixed(2)}</td>
+                        <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                    `;
+                    cartItems.appendChild(row);
+                    total += item.price * item.quantity;
+                });
+
+                totalPriceElement.innerText = `Total: $${total.toFixed(2)}`;
+                cartContainer.style.display = cart.length ? 'block' : 'none';
+            }
+        });
+    </script>
+</body>
+
+	<footer>
+            <p>&copy; 2025 FIFA Charity Match. All rights reserved. (Educational Purpose Only)</p>
+    </footer>
+	
+</html>

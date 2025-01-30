@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Charity Match - Donate</title>
+    <link rel="stylesheet" href="fifastyles.css">
+    <style>
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #004080;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+        }
+
+
+        .frame {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #004080, #00bfff);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            color: white;
+            animation: fadeIn 1.5s ease-out;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .frame h3 {
+            width: 100%;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Donation option cards */
+        .donation-option {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .donation-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .donation-option strong {
+            display: block;
+            font-size: 1.5rem;
+            color: #004080;
+            margin-bottom: 10px;
+        }
+
+        .donation-option p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .donation-option .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00bfff;
+            margin: 15px 0;
+        }
+
+        .donate-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .donate-btn:hover {
+            background-color: #003060;
+        }
+		
+		footer p {
+			color: #f4f4f9;
+		}
+
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <div class="logos">
+            <img src="photos/fifa.png" alt="FIFA Logo">
+            <img src="photos/unicef.png" alt="UNICEF Logo">
+        </div>
+		
+        <div class="container">
+            <h1>Donate</h1>
+            <nav>
+                <a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="match.html">Match</a>
+				<a href="teams.html">Teams</a>
+				<a href="tickets.html">Tickets</a>
+				<a href="donate.html">Donate</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+				<a href="https://www.fifa.com/en/home" target="_blank" >FIFA Official Page</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Make a Difference</h2>
+            <p>Help support children around the world with your generous donation.</p>
+
+            <div class="frame">
+                <h3>Donation Options</h3>
+
+                <div class="donation-option">
+                    <strong>RM100</strong>
+                    <p>Provides therapeutic food for malnourished children for a month.</p>
+                    <p class="price">RM100</p>
+                    <a href="https://help.unicef.org/malaysia/donate-for-every-child?utm_source=referral&utm_medium=organic&utm_campaign=unicef-org&utm_id=7015g000000pEbM&utm_term=redirect&utm_content=general" class="donate-btn" target="_blank">Donate Now</a>
+                </div>
+
+                <div class="donation-option">
+                    <strong>RM80</strong>
+                    <p>Supports education programs for children in need.</p>
+                    <p class="price">RM80</p>
+                    <a href="https://help.unicef.org/malaysia/donate-for-every-child?utm_source=referral&utm_medium=organic&utm_campaign=unicef-org&utm_id=7015g000000pEbM&utm_term=redirect&utm_content=general" class="donate-btn" target="_blank">Donate Now</a>
+                </div>
+
+                <div class="donation-option">
+                    <strong>RM60</strong>
+                    <p>Provides clean drinking water to communities in need.</p>
+                    <p class="price">RM60</p>
+                    <a href="https://help.unicef.org/malaysia/donate-for-every-child?utm_source=referral&utm_medium=organic&utm_campaign=unicef-org&utm_id=7015g000000pEbM&utm_term=redirect&utm_content=general" class="donate-btn" target="_blank">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+	<footer>
+            <p>&copy; 2025 FIFA Charity Match. All rights reserved. (Educational Purpose Only)</p>
+    </footer>
+
+</html>

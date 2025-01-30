@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA Charity Match - Gallery</title>
+    <link rel="stylesheet" href="fifastyles.css">
+	<style>
+	
+		.highlights-section {
+			padding: 20px;
+			background-color: #f5f5f5;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 20px;
+			padding: 20px;
+		}
+
+		.grid-item img,
+			.grid-item iframe {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+
+		.grid-item iframe {
+			border: none;
+		}
+		
+	</style>
+</head>
+
+<body>
+   <header id="home">
+		<div class="logos">
+			<img src="photos/fifa.png" alt="FIFA Logo">
+			<img src="photos/unicef.png" alt="UNICEF Logo">
+		</div>
+		
+        <div class="container">
+            <h1>Gallery</h1>
+            <nav>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="match.html">Match</a>
+				<a href="teams.html">Teams</a>
+				<a href="tickets.html">Tickets</a>
+				<a href="donate.html">Donate</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+				<a href="https://www.fifa.com/en/home" target="_blank" >FIFA Official Page</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+		<main class="highlights-section">
+		
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="photos/gallery1.jpeg" alt="UNICEF Photo 1">
+            </div>
+            <div class="grid-item">
+                <img src="photos/gallery2.jpeg" alt="UNICEF Photo 2">
+            </div>
+            <div class="grid-item">
+                <img src="photos/gallery3.jpg" alt="UNICEF Photo 3">
+            </div>
+			<div class="grid-item">
+                <img src="photos/gallery4.jpg" alt="UNICEF Photo 4">
+            </div>
+			<div class="grid-item">
+                <img src="photos/gallery5.jpeg" alt="UNICEF Photo 5">
+            </div>
+            <div class="grid-item">
+                <iframe src="https://www.youtube.com/embed/8Sz0L-_6x-M" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="grid-item">
+               <iframe src="https://www.youtube.com/embed/wtbAJKBUoJM" frameborder="0" allowfullscreen></iframe>
+            </div>
+			<div class="grid-item">
+                <img src="photos/gallery6.webp" alt="UNICEF Photo 6">
+            </div>
+			<div class="grid-item">
+				<img src="photos/gallery7.jpg" alt="UNICEF Photo 7">
+            </div>
+			<div class="grid-item">
+                <img src="photos/gallery8.jpg" alt="UNICEF Photo 8">
+            </div>
+			<div class="grid-item">
+                <img src="photos/gallery9.jpeg" alt="UNICEF Photo 9">
+            </div>
+			<div class="grid-item">
+				<img src="photos/gallery10.jpg" alt="UNICEF Photo 10">
+            </div>
+		</div>
+    </main>
+</body>
+
+    <footer>
+            <p>&copy; 2025 FIFA Charity Match. All rights reserved. (Educational Purpose Only)</p>
+    </footer>
+
+</html>
