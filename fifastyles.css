@@ -205,11 +205,11 @@ nav a:hover::after {
     }
 	
     header .logos img {
-        height: 40px;
+        height: 30px;
     }
 	
 	.donation-banner h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 	
     .container {
