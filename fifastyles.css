@@ -196,17 +196,59 @@ nav a:hover::after {
 }
 
 @media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 0;
+    header h1 {
+        font-size: 2.5rem;
     }
-    nav a {
-        margin: 10px 5px;
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .team-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-logos img {
+        height: 80px;
+    }
+
+    #countdown {
+        flex-wrap: wrap;
+    }
+
+    #countdown div {
+        margin: 5px;
         font-size: 1rem;
     }
+
+    #countdown span {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .stadium-image {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
+
 
 .club-logo {
     width: 150px;
